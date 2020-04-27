@@ -51,11 +51,15 @@ app.use(passport.session());
 
 routes(app);
 
-app.get('*', (req, res) => res.status(200).send({
-  message: 'Welcome to the clients .',
-}));
+app.use(express.static(path.join(__dirname, 'build')))
+app.get('*', (req, res) => 
+// res.status(200).send({
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+  // message: 'Welcome to the clients .',
+// })
+);
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 const server = app.listen(port, () => {
  console.log(`Node.js API server is listening on http://localhost:${port}/`);
 });
