@@ -1,8 +1,7 @@
-import { Strategy as LocalStrategy } from 'passport-local';
-import { login } from './controllers/user'
-
-const PassportLocal = new LocalStrategy(
-  {
+var { localStrategy } = require('passport-local').Strategy;
+const { login } = require('./controllers/user');
+const passport = require('passport');
+passport.use('localSignin', new localStrategy({
     usernameField: 'email',
     passwordField: 'password',
   },
@@ -18,5 +17,5 @@ const PassportLocal = new LocalStrategy(
       return done(null, false, { message });
     }
   }
-);
-export default PassportLocal;
+));
+// export default PassportLocal;

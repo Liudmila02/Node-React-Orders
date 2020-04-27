@@ -1,11 +1,11 @@
-import redis from './src/redis';
-import passport from './src/passport';
-import connectRedis from 'connect-redis';
-import cookieParser from 'cookie-parser';
-import session from 'express-session';
-import cors from 'cors'
-const routes = require('./src/routes');
 const express = require('express');
+const redis = require('./src/redis');
+const passport = require('./src/passport');
+const connectRedis = require('connect-redis');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const cors = require('cors')
+const routes = require('./src/routes');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -60,5 +60,5 @@ const server = app.listen(port, () => {
 });
 
 
-export default app;
+// export default app;
 module.exports = app;

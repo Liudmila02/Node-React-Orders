@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
   return Client;
 };
 
-export default (sequelize, DataTypes) => {
+(sequelize, DataTypes) => {
   const Client = sequelize.define('Client', {
     client: {
       type: DataTypes.STRING,

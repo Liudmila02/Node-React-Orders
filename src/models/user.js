@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
   return User;
 };
 
-export default (sequelize, DataTypes) => {
+(sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     id: {
       type: DataTypes.UUID,

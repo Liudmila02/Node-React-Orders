@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   return History;
 };
-export default (sequelize, DataTypes) => {
+(sequelize, DataTypes) => {
   const History = sequelize.define('History', {
     date: {
       type: DataTypes.DATE,
