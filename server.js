@@ -1,10 +1,10 @@
-import cors from 'cors'
-const routes = require('./src/routes');
 import redis from './src/redis';
 import passport from './src/passport';
 import connectRedis from 'connect-redis';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
+import cors from 'cors'
+const routes = require('./src/routes');
 const express = require('express');
 const bodyParser = require('body-parser');
 
