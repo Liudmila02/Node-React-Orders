@@ -1,6 +1,7 @@
 const express = require('express');
 const redis = require('./src/redis');
-const passport = require('./src/passport');
+var passport = require('passport');
+require('./src/passport');
 const connectRedis = require('connect-redis');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');

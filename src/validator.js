@@ -1,4 +1,4 @@
-export const validateRegisterForm = args => {
+const validateRegisterForm = args => {
   var errors = {}
   if (!args.name) errors.name = "this field cann't be blank"
   if (!args.email) errors.email =  "missing email";
@@ -7,7 +7,7 @@ export const validateRegisterForm = args => {
  return errors
 }
 
-export const validateClientsForm = args => {
+const validateClientsForm = args => {
   var errors = {}
   if (!args.client) errors.client =  "this field cann't be blank";
   if (!args.project) errors.project =  "this field cann't be blank";

@@ -1,7 +1,7 @@
-import passport from 'passport'
-import Users from '../controllers/user'
-import Clients from '../controllers/client'
-import { validateRegisterForm, validateClientsForm } from '../validator'
+const passport = require('passport');
+const Users = require('../controllers/user');
+const Clients = require('../controllers/client');
+const { validateRegisterForm, validateClientsForm } = require('../validator');
 
 var { Router } = require('express');
 var router = new Router();
@@ -56,9 +56,10 @@ module.exports = function (app) {
     return res.status(200).json(order)
   });
 
-  app.get('/client/:id', isAuthenticated, Clients.show);
+  // app.get('/client/:id', isAuthenticated, async (req, res) => {
+  //   const orderClients.show);
 
-  app.put('/client/:id', async (req, res) => {
+  app.put('/client/:id', isAuthenticated, async (req, res) => {
     const order = await Clients.update(req, res)
     if (!order) {
       return res.status(401).json({
@@ -68,9 +69,9 @@ module.exports = function (app) {
     return res.status(200).json(order)
   })
 
-  app.get('/orders', isAuthenticated, Clients.list);
+  // app.get('/orders', isAuthenticated, Clients.list);
 
-  app.delete('/client/:id', isAuthenticated, Clients.delete);
+  // app.delete('/client/:id', isAuthenticated, Clients.delete);
 
   app.post('/history', isAuthenticated, async (request, response, next) => {
     const history = Clients.create(request, response)
@@ -82,7 +83,7 @@ module.exports = function (app) {
     return response.status(200).json(history)
   });
 
-  app.get('/histories', Clients.table);
+  // app.get('/histories', Clients.table);
 }
 
 function isAuthenticated(req, res, next) {

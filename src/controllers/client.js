@@ -1,4 +1,4 @@
-import model from '../models/index';
+const model = require('../models/index');
 
 const { Client, History } = model;
 
@@ -115,4 +115,4 @@ class Clients {
   }
 }
 
-export default Clients 
+// export default Clients 
