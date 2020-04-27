@@ -1,0 +1,40 @@
+.form-client {
+  margin-left: 20px;
+}
+.input-client {
+  margin-left: 15px;
+  font-size: 20px;
+  width: 150px;
+}
+.input-project {
+  margin-left: 15px;
+  font-size: 20px;
+  width: 150px;
+}
+.input-department {
+  margin-left: 15px;
+  font-size: 20px;
+  width: 150px;
+}
+.input-estimate {
+  margin-left: 15px;
+  font-size: 20px;
+  width: 100px;
+}
+.input-budget {
+  margin-left: 15px;
+  font-size: 20px;
+  width: 110px;
+}
+.input-start-date {
+  margin-left: 15px;
+  font-size: 20px;
+  width: 180px;
+}
+.btn-create {
+  margin-left: 25px;
+  font-size: 20px;
+  width: 145px;
+  border: 1px solid black;
+  border-radius: 5px;
+}

@@ -1,0 +1,21 @@
+.form-login {
+  padding: 300px 800px;
+}
+.input-email {
+  font-size: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.input-password {
+  font-size: 30px;
+  margin-bottom: 30px;
+  border: 1px solid black;
+}
+.button-signin {
+  font-size: 25px;
+  width: 160px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-left: 110px;
+}

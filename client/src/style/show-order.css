@@ -1,0 +1,48 @@
+.btn-back {
+  margin: -40px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 90px;
+}
+.show-order {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 50px 30px;
+}
+.project {
+  margin-left: 50px;
+}
+.department {
+  margin-left: 50px;
+}
+.show-client {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.show-project {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.show-department {
+  font-size: 30px;
+  margin-left: 20px;
+}
+#th-order {
+  width: 250px;
+}
+#date {
+  width: 200px;
+  text-align: center;
+}
+#manager {
+ width: 150px;
+ text-align: center;
+}
+#action {
+ width: 1400px;
+ height: 50px;
+}
+#parametr {
+  margin-left: 30px;
+}

@@ -1,0 +1,136 @@
+.form-order {
+  padding-left: 148px;
+  padding-top: 40px;
+}
+.table {
+  font-size: 20px;
+  border: solid thin; 
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px 50px;
+}
+th {
+  background-color: #DAE0E3;
+}
+td, th {
+  border: 1px solid #c0c0c0;
+  height: 35px;
+}
+.th-option {
+  background-color: white;
+  width: 130px;
+  border-style: hidden;
+}
+.icon-palette {
+  border-style: none;
+  background-color: white;
+  color: white;
+}
+.icon-palette:hover {
+  color: black;
+  border: none;
+}
+.icon-create {
+  border-style: none;
+  background-color: white;
+  color: white;
+}
+.icon-create:hover {
+  color: black;
+}
+.icon-delete {
+  border-style: none;
+  background-color: white;
+  color: white;
+}
+.icon-delete:hover {
+  color: black;
+}
+.th-client {
+  width: 290px;
+}
+.th-project {
+  width: 170px;
+}
+.th-department {
+  width: 190px;
+}
+.th-estimate {
+  width: 190px;
+}
+.th-budget {
+  width: 190px;
+}
+.th-start-date {
+  width: 250px;
+}
+.th-history {
+  width: 350px;
+}
+.item-option {
+  border-style: hidden;
+  border-width: 1px;
+  border-right-style: solid;
+}
+.item-client {
+  text-align: left;
+  padding-left: 10px;
+}
+.item-project {
+  text-align: left;
+  padding-left: 10px;
+}
+.item-department {
+  text-align: left;
+  padding-left: 10px;
+}
+.item-estimate {
+  text-align: right;
+  padding-right: 10px;
+}
+.item-budget {
+  text-align: right;
+  padding-right: 10px;
+}
+.item-start-date {
+  text-align: center;
+}
+.log-out {
+  font-size: 20px;
+}
+.nav {
+  margin-left: 1600px;
+  margin-top: 30px;
+}
+.palette {
+  margin: 150px 300px;
+  font-size: 20px;
+  border: solid thin; 
+  border-collapse: collapse;
+  width: 300px;
+  height: 200px;
+}
+.green {
+  background-color: #C1F7A8;
+}
+.yellow {
+  background-color: #FEFFBA;
+}
+.ligth-blue {
+  background-color: #C8FAE8;
+}
+.dark-blue {
+  background-color: #B3CBF5;
+}
+.red {
+  background-color: #F5BDBA;
+}
+.pink {
+  background-color: #E7BEF7 ;
+}
+.purple {
+  background-color: #D3CCED;
+}
+.white {
+  background-color: #FFFFFF ;
+}
