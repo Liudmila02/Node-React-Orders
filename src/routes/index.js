@@ -1,4 +1,4 @@
-const passport = require('passport');
+// const passport = require('passport');
 const Users = require('../controllers/user');
 const Clients = require('../controllers/client');
 const { validateRegisterForm, validateClientsForm } = require('../validator');
@@ -20,7 +20,7 @@ module.exports = function (app) {
   });
 
   app.post('/login', async (req, res, next) => {
-    passport.authenticate('local', function (err, user, info) {
+    // passport.authenticate('local', function (err, user, info) {
       if (!user) {
         return res.status(401).json({
           message: "not found"
@@ -33,7 +33,7 @@ module.exports = function (app) {
         return res.status(200).json({
           user
         })
-      });
+      // });
     })(req, res, next);
   })
 
@@ -55,7 +55,15 @@ module.exports = function (app) {
     }
     return res.status(200).json(order)
   });
-
+  app.get('/client/:id', isAuthenticated, async (req, res) => {
+    const showOrder = await Clients.show(req, res)
+    if (!showOrder) {
+      return res.status(401).json({
+        message: "bad request"
+      })
+    }
+    return res.status(200).json(showOrder)
+  })
   // app.get('/client/:id', isAuthenticated, async (req, res) => {
   //   const orderClients.show);
 
