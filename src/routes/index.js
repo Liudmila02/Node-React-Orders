@@ -20,6 +20,7 @@ module.exports = function (app) {
   });
 
   app.post('/login', async (req, res, next) => {
+    console.log('^^^^^^^^^^^^^^^^^^^^')
     // passport.authenticate('local', function (err, user, info) {
       if (!user) {
         return res.status(401).json({
